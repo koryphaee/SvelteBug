@@ -1,0 +1,5 @@
+services:
+  sveltebug:
+    build: .
+    ports:
+      - 5000:80

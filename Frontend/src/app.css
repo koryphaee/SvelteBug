@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		color-scheme: dark;
+	}
+
+	:focus-visible {
+		@apply outline outline-1 outline-white;
+	}
+
+	.ellipsis {
+		@apply overflow-hidden text-ellipsis whitespace-nowrap;
+	}
+
+	.button {
+		@apply cursor-pointer rounded-md bg-purple px-1 py-0.5 text-black;
+	}
+
+	.bigbutton {
+		@apply button text-[2vmax];
+	}
+
+	textarea,
+	input,
+	select {
+		@apply rounded-md bg-gray px-1 py-0.5 text-black caret-current;
+	}
+
+	*:disabled {
+		@apply brightness-50;
+	}
+}
